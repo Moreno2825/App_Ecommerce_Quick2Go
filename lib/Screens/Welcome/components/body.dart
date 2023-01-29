@@ -29,7 +29,7 @@ class Body extends StatelessWidget {
             height: size.height * 0.05,
           ),
           RoundedButton(
-            text: "SALIR",
+            text: "ENTRAR",
             press: () {
               Navigator.push(
                 context,
