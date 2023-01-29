@@ -15,11 +15,19 @@ class Body extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          SizedBox(height: size.height * 0.3),
           SvgPicture.asset(
             "assets/icons/quick2go.svg",
-            height: size.height * 0.25,
+            height: size.height * 0.28,
           ),
-          SizedBox(height: size.height * 0.1),
+          SizedBox(height: size.height * 0.02),
+          const Text(
+            "¡Aqui encuentras el mejor servicio!",
+            style: TextStyle(fontFamily: 'PaytoneOne'),
+          ),
+          SizedBox(
+            height: size.height * 0.05,
+          ),
           RoundedButton(
             text: "ENTRAR",
             press: () {

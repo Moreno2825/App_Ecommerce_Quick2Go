@@ -17,11 +17,12 @@ class Background extends StatelessWidget {
         alignment: Alignment.bottomCenter, //para centrar el sgv
         children: <Widget>[
           Positioned(
+            // para posicionar la imagen
             top: 0,
             left: 0,
             child: Image.asset(
-              "assets/images/login_up.png",
-              width: size.width * 1,
+              "assets/images/toma1.png",
+              width: size.width * 1.07,
             ),
           ),
           Positioned(

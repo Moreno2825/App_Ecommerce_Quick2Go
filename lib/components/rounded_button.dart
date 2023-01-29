@@ -22,7 +22,7 @@ class RoundedButton extends StatelessWidget {
       child: ClipRRect(
         //=> wrap Container para hacer largo el button
         borderRadius:
-            BorderRadius.circular(18), // => para hacer el borde redondo
+            BorderRadius.circular(30), // => para hacer el borde redondo
         child: TextButton(
           // => text button convertir en widget
           style: TextButton.styleFrom(
