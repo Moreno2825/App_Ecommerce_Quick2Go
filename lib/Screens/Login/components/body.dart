@@ -21,8 +21,24 @@ class Body extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text(
-            "LOGIN",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            "Bienvenido a",
+            style: TextStyle(
+                fontFamily: 'Roboto',
+                fontWeight: FontWeight.bold,
+                fontSize: 15),
+          ),
+          const Text(
+            "Quick2Go",
+            style: TextStyle(fontFamily: 'PaytoneOne', fontSize: 50),
+          ),
+          SizedBox(height: size.height * 0.03),
+          const Text(
+            "Ingresa a tu cuenta",
+            style: TextStyle(
+                fontFamily: 'Roboto',
+                fontWeight: FontWeight.normal,
+                color: Colors.grey,
+                fontSize: 15),
           ),
           SizedBox(height: size.height * 0.03),
           RoundedinputField(
@@ -32,11 +48,11 @@ class Body extends StatelessWidget {
           RoundedPasswordField(
             onChanged: (value) {},
           ),
+          SizedBox(height: size.height * 0.05),
           RoundedButton(
-            text: "LOGIN",
+            text: "ENTRAR",
             press: () {},
           ),
-          SizedBox(height: size.height * 0.03),
           AlreadyHaveAnAccountCheck(press: () {
             Navigator.push(
               context,

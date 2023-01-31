@@ -65,6 +65,10 @@ flutter:
      - family: PaytoneOne
        fonts:
          - asset: fonts/PaytoneOne-Regular.ttf
+     - family: Roboto
+       fonts:
+         - asset: fonts/Roboto-Bold.ttf
+         - asset: fonts/Roboto-Medium.ttf
   # To add assets to your application, add an assets section, like this:
 
 
