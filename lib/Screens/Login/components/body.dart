@@ -17,53 +17,55 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size; //
     return Background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          const Text(
-            "Bienvenido a",
-            style: TextStyle(
-                fontFamily: 'Roboto',
-                fontWeight: FontWeight.bold,
-                fontSize: 15),
-          ),
-          const Text(
-            "Quick2Go",
-            style: TextStyle(fontFamily: 'PaytoneOne', fontSize: 50),
-          ),
-          SizedBox(height: size.height * 0.03),
-          const Text(
-            "Ingresa a tu cuenta",
-            style: TextStyle(
-                fontFamily: 'Roboto',
-                fontWeight: FontWeight.normal,
-                color: Colors.grey,
-                fontSize: 15),
-          ),
-          SizedBox(height: size.height * 0.03),
-          RoundedinputField(
-            hintText: "Your Email",
-            onChanged: (value) {},
-          ),
-          RoundedPasswordField(
-            onChanged: (value) {},
-          ),
-          SizedBox(height: size.height * 0.05),
-          RoundedButton(
-            text: "ENTRAR",
-            press: () {},
-          ),
-          AlreadyHaveAnAccountCheck(press: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return const SignUpScreen();
-                },
-              ),
-            );
-          }),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              "Bienvenido a",
+              style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15),
+            ),
+            const Text(
+              "Quick2Go",
+              style: TextStyle(fontFamily: 'PaytoneOne', fontSize: 50),
+            ),
+            SizedBox(height: size.height * 0.03),
+            const Text(
+              "Ingresa a tu cuenta",
+              style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.normal,
+                  color: Colors.grey,
+                  fontSize: 15),
+            ),
+            SizedBox(height: size.height * 0.03),
+            RoundedinputField(
+              hintText: "Your Email",
+              onChanged: (value) {},
+            ),
+            RoundedPasswordField(
+              onChanged: (value) {},
+            ),
+            SizedBox(height: size.height * 0.05),
+            RoundedButton(
+              text: "ENTRAR",
+              press: () {},
+            ),
+            AlreadyHaveAnAccountCheck(press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const SignUpScreen();
+                  },
+                ),
+              );
+            }),
+          ],
+        ),
       ),
     );
   }
